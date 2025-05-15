@@ -4,5 +4,10 @@
 // 最後將金額無條件進位到最到下個0.05倍數
 
 
-
-src/
+路徑:
+src/main/java/com/shoppingreceipt
+model:
+goods.java
+Shoppinginput.java
+main:
+ShoppingReceipt.java
