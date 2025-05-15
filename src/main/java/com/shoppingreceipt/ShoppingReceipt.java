@@ -1,9 +1,11 @@
-package com.shoppingreceipt.model;
+package com.shoppingreceipt;
 
 import java.io.*;
 import java.nio.file.Paths;
 import java.util.*;
 import com.fasterxml.jackson.databind.ObjectMapper;
+import com.shoppingreceipt.model.Goods;
+import com.shoppingreceipt.model.ShoppingInput;
 
 public class ShoppingReceipt {
 
@@ -11,7 +13,7 @@ public class ShoppingReceipt {
     
     	 // 用 Jackson 讀取 JSON 檔案並自動轉成 Java 物件
         ObjectMapper mapper = new ObjectMapper();
-        ShoppingInput input = mapper.readValue(Paths.get("input3.json").toFile(), ShoppingInput.class);
+        ShoppingInput input = mapper.readValue(Paths.get("input1.json").toFile(), ShoppingInput.class);
 
         String location = input.getLocation();
         List<Goods> goods = input.getGoods();
